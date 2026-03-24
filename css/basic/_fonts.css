@@ -3,6 +3,8 @@
     font-family: 'DM Sans 9pt';
     src: url('../../DMSans-9ptRegular.woff2') format('woff2'),
         url('../../DMSans-9ptRegular.woff') format('woff');
+    src: url('../../fonts/DMSans-9ptRegular.woff2') format('woff2'),
+        url('../../fonts/DMSans-9ptRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,6 +14,8 @@
     font-family: 'DM Sans 9pt';
     src: url('../../DMSans-9ptItalic.woff2') format('woff2'),
         url('../../DMSans-9ptItalic.woff') format('woff');
+    src: url('../../fonts/DMSans-9ptItalic.woff2') format('woff2'),
+        url('../../fonts/DMSans-9ptItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;

@@ -1,0 +1,14 @@
+
+.main__inner {
+    margin: 120px auto 80px
+}
+
+.main__content {
+    display: flex;
+    gap: 116px;
+    padding-right: 64px;
+}
+
+.main__title {
+    max-width: 360px;
+}

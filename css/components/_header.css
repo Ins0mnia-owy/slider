@@ -1,0 +1,25 @@
+
+.header__inner {
+    height: 35px;
+    align-items: end;
+    margin: 50px auto 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__links {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 120%;
+    
+}
+
+.header__link {
+    transition: color .2s, transform .2s;
+
+    &:hover {
+        color: var(--light-gray);
+    }
+}
