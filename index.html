@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider JS</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="../../img/arrow-icon.png" type="image/png">
 </head>
@@ -11,9 +12,6 @@
     <header>
         <div class="container">
             <div class="header__inner">
-                <p class="header__logo">
-                    ma.
-                </p>
                 <div class="header__logo">
                     <svg width="68" height="23" viewBox="0 0 68 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 22.4692V0.530769H4.15913L4.55734 3.62692C5.26528 2.50641 6.19445 1.62179 7.34484 0.973076C8.52474 0.324359 9.88162 0 11.4155 0C14.8962 0 17.315 1.37115 18.6718 4.11346C19.4683 2.84551 20.5302 1.84295 21.8575 1.10577C23.2144 0.36859 24.6745 0 26.2379 0C28.9812 0 31.1345 0.825641 32.6978 2.47692C34.2612 4.1282 35.0429 6.59038 35.0429 9.86346V22.4692H30.3528V10.35C30.3528 6.10385 28.7304 3.98077 25.4857 3.98077C23.8339 3.98077 22.477 4.6 21.4151 5.83846C20.3827 7.07692 19.8665 8.84615 19.8665 11.1462V22.4692H15.1764V10.35C15.1764 6.10385 13.5393 3.98077 10.2651 3.98077C8.64273 3.98077 7.3006 4.6 6.23869 5.83846C5.20628 7.07692 4.69008 8.84615 4.69008 11.1462V22.4692H0Z" fill="#181717" />
@@ -46,56 +44,141 @@
             </div>
         </div>
     </header>
-
     <main>
-        <div class="container">
-            <div class="main__inner">
-                <h2 class="main__title">
-                    Hello, I’m Mehmet Akif.
-                </h2>
-                <p class="main__text">
-                    A senior-year design student who trying to specialize in 3D modeling & texturing.
-                </p>
-                <div class="main__content">
-                    <h2 class="main__title">
-                        Hello, I’m Mehmet Akif.
-                    </h2>
-                    <h3 class="main__text">
-                        A senior-year design student who trying to specialize in 3D modeling & texturing.
-                    </h3>
-                </div>
-                <div class="main__img">
-                    <svg class="main__arrow" width="34" height="39" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.1861 0H14.3849V29.0284L3.28693 17.9304L0 21.2543L16.7855 38.0398L33.608 21.2543L30.2472 17.9304L19.1861 29.0284V0Z" fill="#181717" />
-                    </svg>
+
+        <div class="main">
+            <div class="container">
+                <div class="main__inner">
+                    <div class="main__content">
+                        <h2 class="main__title">
+                            Hello, I’m Mehmet Akif.
+                        </h2>
+                        <h3 class="main__text">
+                            A senior-year design student who trying to specialize in 3D modeling & texturing.
+                        </h3>
+                    </div>
+                    <div class="main__img">
+                        <svg class="main__arrow" width="34" height="39" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.1861 0H14.3849V29.0284L3.28693 17.9304L0 21.2543L16.7855 38.0398L33.608 21.2543L30.2472 17.9304L19.1861 29.0284V0Z" fill="#181717" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="shots">
+            <div class="container">
+                <div class="shots__inner">
+                    <div class="shots__btns">
+                        <button class="shots__btn shots__btn-prev">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.75 12.75L0.75 6.75L6.75 0.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="shots__btn shots__btn-next">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 12.75L6.75 6.75L0.75 0.75" stroke="#FAF8ED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="shots__content">
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="shots__card">
+                                    <div class="shots__cardcontent">
+                                        <div class="shots__cardtop">
+                                            <p class="shots__title">
+                                                01 / Street Stone
+                                            </p>
+                                            <p class="shots__text">
+                                                Street concept digital sculpture with human-like skin. Learned a lot of quick tips and look development.
+                                            </p>
+                                            <p class="shots__subtext">
+                                                Sculpted in ZBrush, Retopologized and UVs done in Maya, Textured in Mari, Rendered using Arnold.
+                                            </p>
+                                        </div>
+                                        <div class="shots__cardbottom">
+                                            <a class="shots__link" href="https://github.com/" target="_blank">
+                                                More shots from this project ↗
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <img src="../img/streetstone01.png">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="shots__card">
+                                    <div class="shots__cardcontent">
+                                        <div class="shots__cardtop">
+                                            <p class="shots__title">
+                                                02 / Street Stone
+                                            </p>
+                                            <p class="shots__text">
+                                                Street concept digital sculpture with human-like skin. Learned a lot of quick tips and look development.
+                                            </p>
+                                            <p class="shots__subtext">
+                                                Sculpted in ZBrush, Retopologized and UVs done in Maya, Textured in Mari, Rendered using Arnold.
+                                            </p>
+                                        </div>
+                                        <div class="shots__cardbottom">
+                                            <a class="shots__link" href="https://github.com/" target="_blank">
+                                                More shots from this project ↗
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <img src="../img/streetstone01.png">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="shots__card">
+                                    <div class="shots__cardcontent">
+                                        <div class="shots__cardtop">
+                                            <p class="shots__title">
+                                                03 / Street Stone
+                                            </p>
+                                            <p class="shots__text">
+                                                Street concept digital sculpture with human-like skin. Learned a lot of quick tips and look development.
+                                            </p>
+                                            <p class="shots__subtext">
+                                                Sculpted in ZBrush, Retopologized and UVs done in Maya, Textured in Mari, Rendered using Arnold.
+                                            </p>
+                                        </div>
+                                        <div class="shots__cardbottom">
+                                            <a class="shots__link" href="https://github.com/" target="_blank">
+                                                More shots from this project ↗
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <img src="../img/streetstone01.png">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
-
-    <div class="shots">
-        <div class="container">
-            <div class="shots__inner">
-                <div class="shots__btns">
-
-                </div>
-                 <div class="main__content">
-                 <div class="shots__content">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
     <footer>
         <div class="container">
             <div class="footer__inner">
                 <p class="footer__name">
-
                     Mehmet Akif Karasu ⏤ 2020
                 </p>
-                <ul class="header__links">
-                    <li class="header__link">
                 <ul class="footer__links">
                     <li class="footer__link">
                         <a href="https://github.com/" target="_blank" >
@@ -116,5 +199,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

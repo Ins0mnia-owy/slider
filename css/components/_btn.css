@@ -1,0 +1,10 @@
+
+
+.shots__btn {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    justify-content: center;
+    background-color: var(--dark-gray);
+}

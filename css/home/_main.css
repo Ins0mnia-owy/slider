@@ -1,14 +1,24 @@
 
 .main__inner {
-    margin: 120px auto 80px
+    margin: 120px auto 172px
 }
 
 .main__content {
     display: flex;
-    gap: 116px;
-    padding-right: 64px;
+    gap: 70px;
 }
 
 .main__title {
-    max-width: 360px;
+    max-width: 370px;
+    
+}
+
+.main__text {
+    margin: 64px 0px 0px 0px;
+    max-height: 111px;
+    max-width: max-content;
+}
+
+.main__img {
+    margin-top: 24px;
 }
